@@ -16,7 +16,7 @@ server {
     server_name    dev.invoiceplane;
     #access_log    /var/log/nginx/dev.invoiceplance.access.log;
     error_log    /var/log/nginx/dev.invoiceplane.error.log;
-    root    /home/longnguyen/sandbox/invoiceplane;
+    root    /path/to/invoiceplane;
     index index.html index.php index.htm;
 
     # set expiration of assets to MAX for caching
@@ -46,4 +46,5 @@ server {
 
 }
 ```
+add `dev.invoiceplan 127.0.0.1` into /etc/hosts
 run http://dev.invoiceplane/setup
