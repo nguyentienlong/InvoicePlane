@@ -1,5 +1,7 @@
 app url 'http://dev.invoiceplane/'
 
+copy ~/invoiceplane/application/config/database_sample.php and rename to database.php
+
 in ~/invoiceplane/application/config/database.php
 ```
 $db['default']['hostname'] = '127.0.0.1';
@@ -48,3 +50,4 @@ server {
 ```
 add `dev.invoiceplan 127.0.0.1` into /etc/hosts
 run http://dev.invoiceplane/setup
+Initial commit for the customized CRM of Duy VO
