@@ -163,7 +163,7 @@
                             class="visible-sm-inline fa fa-users"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><?php echo anchor('files/form', lang('add_file')); ?></li>
+                        <li><a href="#" class="create-file"><?php echo lang('add_file'); ?></a></li>
                         <li><?php echo anchor('files/index', lang('view_files')); ?></li>
                     </ul>
                 </li>
