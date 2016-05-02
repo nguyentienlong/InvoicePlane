@@ -409,3 +409,18 @@ CREATE TABLE `ip_versions` (
 )
   ENGINE = MyISAM
   DEFAULT CHARSET = utf8;
+
+DROP TABLE IF EXISTS `ip_files`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ip_files` (
+  `file_id` int(11) NOT NULL AUTO_INCREMENT,
+  `file_date_created` datetime NOT NULL,
+  `file_date_modified` datetime NOT NULL,
+  `file_name` varchar(100) NOT NULL,
+  `client_id` int(11) NOT NULL,
+  PRIMARY KEY (`file_id`),
+  KEY `client_id` (`client_id`)
+)
+  ENGINE=MyISAM
+  DEFAULT CHARSET=utf8;
