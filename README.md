@@ -50,4 +50,3 @@ server {
 ```
 add `dev.invoiceplan 127.0.0.1` into /etc/hosts
 run http://dev.invoiceplane/setup
-Initial commit for the customized CRM of Duy VO
